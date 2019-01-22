@@ -17,14 +17,14 @@ public class Pass {
 	public void loginsetup() {
 		
 		String driverpath = System.getProperty("user.dir");
-		System.setProperty("webdriver.chrome.driver", driverpath+ "\\rowserdriver\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", driverpath+ "\\Browserdriver\\chromedriver.exe");
 		driver = new ChromeDriver();
 	}
 	@Test
 	public void test() {
 		driver.get("https://phptravels.org/clientarea.php");
 		driver.findElement(By.name("username")).sendKeys("karthikbtc1212@gmail.com");
-		driver.findElement(By.name("password")).sendKeys("abcd123");
+		driver.findElement(By.name("password")).sendKeys("abcd");
 		driver.findElement(By.id("login")).sendKeys(Keys.RETURN);
 	}
 	@AfterTest	
