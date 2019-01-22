@@ -24,7 +24,7 @@ public class Pass {
 	public void test() {
 		driver.get("https://phptravels.org/clientarea.php");
 		driver.findElement(By.name("username")).sendKeys("karthikbtc1212@gmail.com");
-		driver.findElement(By.name("password")).sendKeys("abcd");
+		driver.findElement("password")).sendKeys("abcd123");
 		driver.findElement(By.id("login")).sendKeys(Keys.RETURN);
 	}
 	@AfterTest	
