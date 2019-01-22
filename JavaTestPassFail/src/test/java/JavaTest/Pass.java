@@ -17,7 +17,7 @@ public class Pass {
 	public void loginsetup() {
 		
 		String driverpath = System.getProperty("user.dir");
-		System.setProperty("webdriver.chrome.driver", driverpath+ "\\Browserdriver\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", driverpath+ "\\rowserdriver\\chromedriver.exe");
 		driver = new ChromeDriver();
 	}
 	@Test
